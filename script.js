@@ -16,6 +16,7 @@ const times = [
 
 let index = 0;
 let interval;
+let isStarted = false; // Prevent multiple triggers on mobile
 
 function createBalloon(color) {
   const balloon = document.createElement('div');
@@ -87,6 +88,9 @@ function triggerCelebration() {
 }
 
 function startEverything() {
+  if (isStarted) return;
+  isStarted = true;
+
   music.play();
 
   setTimeout(() => {
