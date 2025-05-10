@@ -78,7 +78,7 @@ function triggerCelebration() {
 
   }, 1000); 
 
-  const birthdaySong = new Audio("happy-birthday-254480.mp3");
+  const birthdaySong = new Audio("happy-birthday-314197.mp3");
   birthdaySong.play();
 
   setTimeout(() => {
